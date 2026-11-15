@@ -1,5 +1,5 @@
 def isPalindrome(seq):
-    stripped = [char for char in seq if char.isalpha()]
+    stripped = [char.lower() for char in seq if char.isalpha()]
     return stripped == stripped[::-1]
     
     
